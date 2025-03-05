@@ -159,7 +159,7 @@ def start():
     for key, value in metadata.items():
         print(f"{key}: {value}")
     
-    choice = input("\nRemove all metadata? (y/n): ").strip().lower()
+    choice = input("\nRemove all metadata? (y/N): ").strip().lower()
     if choice == "y" or choice == "yes":
         if ext in [".jpg", ".jpeg", ".png", ".heic"]:
             remove_image_metadata(file_path, output_path)
@@ -171,7 +171,6 @@ def start():
             shutil.copy(file_path, output_path)
         print(f"Metadata removed. Saved in {output_path}")
     else:
-        print("Invalid input.")
         exit(1)
 
 
