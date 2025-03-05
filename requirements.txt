@@ -1,3 +1,7 @@
 pillow
 pypdf
 piexif
+mutagen
+python-docx
+olefile
+pandas
